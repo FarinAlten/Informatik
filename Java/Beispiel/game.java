@@ -1,4 +1,4 @@
-public class Test {
+public class game {
     public static void main(String[] args) {
         paladin meinErsterPaladin = new paladin();
 
@@ -7,6 +7,13 @@ public class Test {
 
          meinErsterPaladin.gibLeben(120);
         System.out.println(meinErsterPaladin.gibName());
+        
+
+        bogenschuetze bs = new bogenschuetze("Hans", 150, 80);
+            bs.aendereLeben(130);
+        System.out.println(bs.plebenspunkte);
+            bs.aendererName("Hans");
+        System.out.println(bs.gibName());
         
     }
 }

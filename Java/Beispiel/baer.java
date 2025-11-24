@@ -1,9 +1,15 @@
 public class baer {
   private String name;
   private int lebenspunkte;
-  //private int schadenBiss; 
-  //private int schadenKlaue; 
+  private int schadenBiss; 
+  private int schadenKlaue; 
 
+  public baer() {
+    name = "Bär 1";
+    lebenspunkte = 150;
+    schadenBiss = 15;
+    schadenKlaue = 10;
+  }
    public String gibName(){
     return name;
   }

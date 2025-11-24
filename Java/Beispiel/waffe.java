@@ -3,6 +3,10 @@ public class waffe {
   private int staerke;
   private String bezeichnung;
   
+  public waffe() {
+    bezeichnung = "Schwert";
+    staerke = 25;
+  }
   public void aendereBezeichunung (String pBezeichnung){
     bezeichnung = pBezeichnung;
   }

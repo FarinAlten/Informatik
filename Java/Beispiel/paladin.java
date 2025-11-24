@@ -3,6 +3,16 @@ public class paladin {
   private int leben;
   private String schwert;
   
+  public paladin() {
+    name = "Uther";
+    leben = 120;
+    schwert = "Lichtbringer";
+  }
+  public paladin(String pName, int pLeben, String pSchwert) {
+    name = pName;
+    leben = pLeben;
+    schwert = pSchwert;
+  }
   public String gibSchwert(){
     return schwert;  
     }

@@ -1,16 +1,25 @@
 public class bogenschuetze {
   private String name;
   private int lebenspunkte;
-  //private int praezision; 
+  private int praezision; 
 
-   public String gibName(){
+  public bogenschuetze(String pName, int pLebenspunkte, int praezision){ 
+    name = pName;
+    lebenspunkte = pLebenspunkte;
+    this.praezision = praezision;
+  }
+   public String gibName() {
     return name;
   }
 
-  public int gibLeben(int i){
+  public String getName() {
+    return name; 
+  }
+
+  public int gibLeben(int i) {
         return lebenspunkte;
     }
-  public void aendereLeben (int pLebenNeu){
+  public void aendereLeben (int pLebenNeu) {
     lebenspunkte = pLebenNeu;
   }
 
