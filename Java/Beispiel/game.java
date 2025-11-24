@@ -11,7 +11,7 @@ public class game {
 
         bogenschuetze bs = new bogenschuetze("Hans", 150, 80);
             bs.aendereLeben(130);
-        System.out.println(bs.plebenspunkte);
+        System.out.println(bs.lebenspunkte);
             bs.aendererName("Hans");
         System.out.println(bs.gibName());
         
