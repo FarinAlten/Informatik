@@ -1,29 +1,30 @@
 public class Magier {
   private String name;
   private int leben;
-  private String Trank;
+  private String Trank1;
+  private String Trank2;
+  public String Heiltrank;
+  public String Gifttrank;
+
 
 
   public Magier() {
     name = "Gandalf";
     leben = 100;
-    Trank = "Heiltrank";
+    Trank1 = "Heiltrank";
+    Trank2 = "Gifttrank";
   }
 
-  public Magier(String pName, int pLeben, String pTrank) {
+  public Magier(String pName, int pLeben, String Heiltrank, String Gifttrank) {
     name = pName;
     leben = pLeben;
-    Trank = pTrank;
+    Trank1 = Heiltrank; 
+    Trank2 = Gifttrank;
+   }
+ public void getTrank (String Heiltrank, String Gifttrank) {
+   this.Gifttrank = Gifttrank;
+   this.Heiltrank = Heiltrank;
   }
-
-  public String gibSchwert() {
-    return Trank;
-  }
-
-  public void aenderSchwert(String pNeuerTrank) {
-    Trank = pNeuerTrank;
-  }
-
   public int gibLeben(int i) {
     return leben;
   }

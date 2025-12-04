@@ -1,19 +1,9 @@
 public class game {
     public static void main(String[] args) {
-        paladin meinErsterPaladin = new paladin();
+        Magier newMagier= new Magier(); 
 
-        meinErsterPaladin.aendererName("Arne");
-        System.out.println(meinErsterPaladin.gibName());
+        Magier.get
 
-         meinErsterPaladin.gibLeben(120);
-        System.out.println(meinErsterPaladin.gibName());
-        
-
-        bogenschuetze bs = new bogenschuetze("Hans", 150, 80);
-            bs.aendereLeben(130);
-        System.out.println(bs.lebenspunkte);
-            bs.aendererName("Hans");
-        System.out.println(bs.gibName());
         
     }
 }

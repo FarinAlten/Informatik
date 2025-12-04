@@ -6,7 +6,7 @@ public class konto {
         inhaber = pInhaber;
         kontostand = pKontostand;
     }
-
+ 
     public String getInhaber() {
         return inhaber;
     }
