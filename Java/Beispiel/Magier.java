@@ -1,43 +1,46 @@
 public class Magier {
-  private String name;
-  private int leben;
-  private String Trank1;
-  private String Trank2;
-  public String Heiltrank;
-  public String Gifttrank;
+    private String name;
+    private int leben;
+    private String heiltrank;
+    private String gifttrank;
 
+    // Konstruktor
+    public Magier(String pName, int pLeben, String pHeiltrank, String pGifttrank) {
+        this.name = pName;
+        this.leben = pLeben;
+        this.heiltrank = pHeiltrank;
+        this.gifttrank = pGifttrank;
+    }
 
+    // Tränke
+    public void setTrank(String pHeiltrank, String pGifttrank) {
+        this.heiltrank = pHeiltrank;
+        this.gifttrank = pGifttrank;
+    }
 
-  public Magier() {
-    name = "Gandalf";
-    leben = 100;
-    Trank1 = "Heiltrank";
-    Trank2 = "Gifttrank";
-  }
+    public String getHeiltrank() {
+        return heiltrank;
+    }
 
-  public Magier(String pName, int pLeben, String Heiltrank, String Gifttrank) {
-    name = pName;
-    leben = pLeben;
-    Trank1 = Heiltrank; 
-    Trank2 = Gifttrank;
-   }
- public void getTrank (String Heiltrank, String Gifttrank) {
-   this.Gifttrank = Gifttrank;
-   this.Heiltrank = Heiltrank;
-  }
-  public int gibLeben(int i) {
-    return leben;
-  }
+    public String getGifttrank() {
+        return gifttrank;
+    }
 
-  public void aendereLeben(int pNeuesLeben) {
-    leben = pNeuesLeben;
-  }
+    // Leben
+    public int getLeben() {
+        return leben;
+    }
 
-  public String gibName() {
-    return name;
-  }
+    public void setLeben(int pNeuesLeben) {
+        this.leben = pNeuesLeben;
+    }
 
-  public void aendererName(String pNeuername) {
-    name = pNeuername;
-  }
+    // Name
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String pNeuerName) {
+        this.name = pNeuerName;
+    }
 }
