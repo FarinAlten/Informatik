@@ -3,17 +3,17 @@ public class Array2 {
     int[] zahlen = {1, 2, 3, 4, 5};
 
     public static void main(String[] args) {
-        Array2 arrayObjekt = new Array2();
+        Array2 array = new Array2();
 
         int summe = 0;
-        for (int i = 0; i < arrayObjekt.zahlen.length; i++) {
-            System.out.println(arrayObjekt.zahlen[i]);
-            summe += arrayObjekt.zahlen[i];
+        for (int i = 0; i < array.zahlen.length; i++) {
+            System.out.println(array.zahlen[i]);
+            summe += array.zahlen[i];
         }
 
         System.out.println("Summe aller Werte: " + summe);
 
-        int groessterWert = arrayObjekt.max();
+        int groessterWert = array.max();
         System.out.println("Maximalster Wert: " + groessterWert);
     }
 
