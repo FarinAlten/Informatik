@@ -12,7 +12,7 @@ public class Magier {
         this.gifttrank = pGifttrank;
     }
 
-    // Tränke
+    // Tr?nke
     public void setTrank(String pHeiltrank, String pGifttrank) {
         this.heiltrank = pHeiltrank;
         this.gifttrank = pGifttrank;
