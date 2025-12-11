@@ -1,16 +1,14 @@
-public class array3 {
+public class array4 {
 public static void main (String[] args) {
 
-int [] zahlen = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+int [] zahlen = {1, 10, 15, 20, 25, 30, 35, 40, 45, 50};
 
 for (int i = 0; i < zahlen.length; i++) {
-zahlen [i] = zahlen [i] * 2;
-
-System.out.println ("Verdoppelte Werte:");
+zahlen [i] = zahlen[i] * 2;
 }
+System.out.println ("Werte:") ;
 for (int i = 0; i < zahlen.length; i++) {
 System.out.print (zahlen [i] + " ");
-
-            }
         }
     }
+}
